@@ -268,7 +268,7 @@ for i in range(1,len(nums)):
     elif nums[i]>second and nums[i]!=largest:
         second=nums[i]
 print(second)"""
-nums=[1,2,3,4,5]
+"""nums=[1,2,3,4,5]
 sorted_array=True
 for i in range(1,len(nums)):
     if nums[i]<nums[i-1]:
@@ -277,10 +277,20 @@ for i in range(1,len(nums)):
 if sorted_array:
     print("sorted")
 else:
-    print("not sorted")
+    print("not sorted")"""
+nums = [1, 2, 3, 4, 5]
 
+first = nums[0]
 
+for i in range(1, len(nums)):
+    nums[i-1] = nums[i]
+
+nums[len(nums)-1] = first
+
+print(nums)
     
+    
+        
 
 
         
