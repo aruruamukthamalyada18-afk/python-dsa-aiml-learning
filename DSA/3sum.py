@@ -2,7 +2,7 @@ nums = [-1, 0, 1, 2, -1, -4]
 target=int(input("enter the target"))
 nums.sort()
 for i in range(len(nums)):
-    if i > 0 and nums[i] == nums[i-1]:
+    if i > 0 and nums[i] == nums[i-1]: # to remove duplicates triplets in sum 
        continue
     left=i+1
     right=len(nums)-1
