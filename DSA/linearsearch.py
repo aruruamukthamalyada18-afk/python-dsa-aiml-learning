@@ -8,3 +8,8 @@ for i in range(len(nums)):
         break
 if found==False:
     print("not found")
+
+
+
+"""time complexity o(n)
+space complexity o(1)"""
